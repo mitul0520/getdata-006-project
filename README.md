@@ -48,5 +48,5 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 * It reads the data file from test and train directory, namely X_(train|test).txt, Y_(train|test).txt and subject_(train|test).txt. It then merges this file and write the resulted file in all data directory.
 * Script reads the features file, and select the features with words - "mean" or "std" in it. From the merged data sets it filters only the selected column and write the file in tidy data folder.
 * Script reads the activity file. It merges the activity detail with Y_all file data. And writes the result in tidy data set folder.
-* Script uses ddply function to generate dataset for average of each variable for each activity and each subject. It then writes the result back to tidy data folder.
+* Script uses ddply function to generate dataset for average of each variable for each activity and each subject. It then writes the result back to tidy data folder, in the file named 'summary_tidy.txt'
 
