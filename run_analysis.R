@@ -12,6 +12,7 @@ allDataDir <- paste(dataDir , "/all", sep="")
 tidyDataDir <- paste(dataDir , "/tidy", sep="")
 
 featuresFile <- paste(dataDir , "/features.txt", sep="")
+activityLablesFile <- paste(dataDir, "activity_labels.txt", sep="/")
 
 ## Check if dataDir exists, if not download and unzip the file
 if(!file.exists(dataDir)){
@@ -81,7 +82,7 @@ if(file.exists(allDataDir)){
   ## use activity names to name the activities
   
   ## Read the activity_labels file
-  activityLablesFile <- paste(dataDir, "activity_labels.txt", sep="/")
+  
   activityLabels <- read.table(activityLablesFile)
   colnames(activityLabels) <- c("actId", "activity")
   
